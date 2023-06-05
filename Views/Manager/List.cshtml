@@ -1,0 +1,75 @@
+@model IEnumerable<BankingMVC.Models.Dtos.ManagerDto>
+
+<div>
+    <a class="dropdown-item active" asp-action="Manager" asp-controller="User">Dashboard</a>
+            <a class="dropdown-item" asp-action="GetAll" asp-controller="Customer">Customer List</a> 
+    <table class="table table-active table-bordered table-responsive table-striped">
+        <thead>
+            
+            <tr>
+                <td>
+                S/N
+                </td>
+                <td>
+                First Name
+                </td>
+                <td>
+                Middle Name
+                </td>
+                <td>
+                Last Name
+                </td>
+                <td>
+                Email
+                </td>
+                <td>
+                Phone Number
+                </td>
+                <td>
+                Address
+                </td>
+                <td>
+                Details
+                </td>
+                <td>
+                Update
+                </td>
+                <td>
+                Delete
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                int a = 1;
+                    foreach (var manager in Model)
+                    {
+                    <tr>
+                        <td>@a</td>
+                        <td>@manager.FirstName</td>
+                        <td>@manager.MiddleName</td>
+                        <td>@manager.LastName</td>
+                        <td>@manager.Email</td>
+                        <td>@manager.PhoneNumber</td>
+                        <td>@manager.Address</td>
+                        <td>
+                            <a asp-controller="manager" asp-action="Details" asp-route-id=@manager.Id>Details</a>
+                            </td>
+                            <td>
+                            <a asp-controller="manager" asp-action="Update" asp-route-id=@manager.Id>Update</a>
+                            </td>
+                        <td>
+                            <a asp-controller="manager" asp-action="Delete" asp-route-id=@manager.Id >Delete</a>
+                            </td>
+                    </tr>
+                        {
+                            a++;
+                        }
+                    }
+            }
+        </tbody>
+    </table>
+</div>
+ <li>
+    <a asp-controller="User"  text asp-action="Super">Back</a>
+    </li>

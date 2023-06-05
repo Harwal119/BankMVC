@@ -1,0 +1,16 @@
+/* .customer{
+    display: flex;
+    flex-basis: auto;
+    font-weight: 900;
+    text-shadow: 2px;
+} */
+.customer{
+    width:  400ox;
+    border-radius: 10px;
+    padding: 40px;
+    
+    background-color: rgb(149, 136, 104);
+    background: linear-gradient(#819151,#8c99a7);
+    box-sizing: border-box;
+    /* box-shadow: 4px 4px rgba(0,0,0.1); */
+}

@@ -1,0 +1,65 @@
+@model BankingMVC.Models.Dtos.UpdateCustomerRequestModel
+
+<h2>Customer Update Form</h2>
+
+<div>
+    <form asp-action="Update">
+        <div>
+            <div>
+                <label asp-for="FirstName"></label>
+                <input type="text" asp-for="FirstName">
+                <span asp-validation-for="FirstName"></span>
+                <br><br>
+            </div>
+            
+            <div>
+                <label asp-for="MiddleName"></label>
+                <input type="text" asp-for="MiddleName">
+                <span asp-validation-for="MiddleName"></span>
+                <br><br>
+            </div>
+
+            <div>
+                <label asp-for="LastName"></label>
+                <input type="text" asp-for="LastName">
+                <span asp-validation-for="LastName"></span>
+                <br><br>
+            </div>
+            
+            <div>
+                <label asp-for="PhoneNumber"></label>
+                <input type="text" asp-for="PhoneNumber">
+                <span asp-validation-for="PhoneNumber"></span>
+                <br><br>
+            </div>
+
+
+                 <div>
+                <label asp-for="Address"></label>
+                <input type="text" asp-for="Address">
+                <span asp-validation-for="Address"></span>
+                <br><br>
+            </div>
+            
+            <style>
+                div{
+                    color: cornflowerblue;
+                    text-decoration: solid;
+                }
+                
+            </style>
+        </div>
+        <div>
+                <input class="btn btn-primary" type="submit" value="Submit"/>
+        </div>
+         <li>
+        <a asp-controller="User"  text asp-action="Customer">Back</a>
+    </li>
+    </form>
+</div>
+@section Scripts 
+{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

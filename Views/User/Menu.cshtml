@@ -1,0 +1,27 @@
+@using System.Security.Claims
+@if(User.IsInRole("Super-admin"))
+{
+    <a class="dropdown-item active" asp-action="Super" asp-controller="User">Dashboard</a>
+    <a class="dropdown-item" asp-action="Add" asp-controller="Role">Create Roles</a>
+    <a class="dropdown-item" asp-action="List" asp-controller="Role">Role List</a>
+    <a class="dropdown-item" asp-action="Add" asp-controller="Manager">Add Manager</a>
+    <a class="dropdown-item" asp-action="List" asp-controller="Manager">Manager List</a>
+    <a class="dropdown-item" asp-action="Add" asp-controller="Customer">Add Customer</a>
+    <a class="dropdown-item" asp-action="List" asp-controller="Customer">Customer List</a>
+}
+else if(User.IsInRole("Manager"))
+{
+    <a class="dropdown-item active" asp-action="Manager" asp-controller="User">Dashboard</a>
+    @* <a class="dropdown-item" asp-action="Add" asp-controller="Customer">Create Customer</a> *@
+    <a class="dropdown-item" asp-action="GetAll" asp-controller="Customer">Customer List</a>
+}
+else if(User.IsInRole("Customer"))
+{
+    <a class="dropdown-item" asp-action="Customer" asp-controller="User">Dashboard</a>
+    <a class="dropdown-item" asp-action="CreditWallet" asp-controller="Wallet" asp-route-id= '@User.FindFirst(ClaimTypes.NameIdentifier)?.Value'>Credit Wallet</a>
+    <a class="dropdown-item" asp-action="DebitWallet" asp-controller="Wallet" asp-route-id= '@User.FindFirst(ClaimTypes.NameIdentifier)?.Value'>Debit Wallet</a>
+    <a class="dropdown-item" asp-action="Get" asp-controller="Wallet" asp-route-id= '@User.FindFirst(ClaimTypes.NameIdentifier)?.Value'>View Balance</a> 
+    <a class="dropdown-item" asp-action="GetCustomerTransactions" asp-controller="CustomerTransaction" asp-route-id= '@User.FindFirst(ClaimTypes.NameIdentifier)?.Value'>View Transactions</a> 
+    <a class="dropdown-item" asp-action="Get" asp-controller="Customer"  asp-route-id= '@User.FindFirst(ClaimTypes.NameIdentifier)?.Value' >View profile</a> 
+    <a class="dropdown-item" asp-action="Update" asp-route-id= '@User.FindFirst(ClaimTypes.NameIdentifier)?.Value'>update profile</a>
+}

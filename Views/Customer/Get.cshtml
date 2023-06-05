@@ -1,0 +1,23 @@
+@model BankingMVC.Models.Dtos.CustomerDto
+@{
+    ViewData["CustomerName"] = @Model.FirstName + " " +Model.LastName;
+}
+<h2>
+    @* @ViewData["CustomerName"] *@
+</h2>
+
+<div>
+    <h2>Full Name : @ViewData["CustomerName"]</h2>
+    <h2>Email : @Model.Email</h2>
+    <h2>Phone Number:@Model.PhoneNumber </h2>
+    <h2>Account Number:@Model.AccountNumber</h2>
+    
+</div>
+ <li>
+        <a asp-controller="User"  text asp-action="Customer">Back</a>
+    </li>
+<style>
+    div{
+        color: cornflowerblue;
+    }
+</style>

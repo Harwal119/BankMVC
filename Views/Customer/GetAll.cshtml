@@ -1,0 +1,77 @@
+@model IEnumerable<BankingMVC.Models.Dtos.CustomerDto>
+    @{
+        ViewData["Title"] = "Customer List";
+    }
+
+<div>
+    <table class="table table-active table-bordered table-responsive table-striped">
+        <thead>
+            <tr>
+                <td>
+                    S/N
+                </td>
+                <td>
+                    First Name
+                </td>
+                <td>
+                    Middle Name
+                </td>
+                <td>
+                    Last Name
+                </td>
+                <td>
+                    Phone Number
+                </td>
+                <td>
+                    Address
+                </td>
+                <td>
+                    Details
+                </td>
+                <td>
+                    Delete
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                int i = 1;
+                foreach (var customer in Model)
+                {
+                    <tr>
+                        <td>@i</td>
+                        <td>@customer.FirstName</td>
+                        <td>@customer.MiddleName</td>
+                        <td>@customer.LastName</td>
+                        <td>@customer.PhoneNumber</td>
+                        <td>@customer.Address</td>
+                        <td>
+                            <a asp-controller="Customer" asp-action="Get"  asp-route-id="@customer.Id">Details</a>
+                        </td>
+                        @* <td><a asp-action="Update" asp-controller="Customer" asp-route-id="@customer.Id">Update</a></td> *@
+                        <td>
+                            <a asp-controller="customer" asp-action="Delete"  asp-route-id="@customer.Id">Delete</a>
+                        </td>
+                    </tr>
+                    {
+                        i++;
+                    }
+    
+                }
+            }
+        </tbody>
+    </table>
+     <li>
+            <a asp-controller="User"  text asp-action="Manager">Back</a>
+        </li>
+</div>
+<style>
+    tr {
+        color:purple;
+        @* text-transform: lowercase;  *@
+    }
+
+    td. {
+        color: cornflowerblue;
+    }
+</style>

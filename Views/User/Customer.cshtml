@@ -1,0 +1,29 @@
+@using System.Security.Claims
+@{
+    ViewData["Title"] = "Customer Dashboard";
+}
+<div class="">
+    <div class="row">
+        <div class="col-md-2 border" style="min-height: 520px; padding: 0px; margin: 0px">
+            @await Html.PartialAsync("~/Views/User/Menu.cshtml")
+            <a class="dropdown-item active" asp-action="Super" asp-controller="User">Dashboard</a>
+            <a class="dropdown-item" asp-action="CreditWallet" asp-controller="Wallet" asp-route-id= '@User.FindFirst(ClaimTypes.NameIdentifier)?.Value'>Credit Wallet</a>
+            <a class="dropdown-item" asp-action="DebitWallet" asp-controller="Wallet" asp-route-id= '@User.FindFirst(ClaimTypes.NameIdentifier)?.Value'>Debit Wallet</a>
+            <a class="dropdown-item" asp-action="Get" asp-controller="Wallet" asp-route-id= '@User.FindFirst(ClaimTypes.NameIdentifier)?.Value'>View Balance</a> 
+            <a class="dropdown-item" asp-action="GetCustomerTransactions" asp-controller="CustomerTransaction" asp-route-id= '@User.FindFirst(ClaimTypes.NameIdentifier)?.Value'>View Transactions</a> 
+            <a class="dropdown-item" asp-action="Get" asp-controller="Customer" asp-route-id= '@User.FindFirst(ClaimTypes.NameIdentifier)?.Value'>View profile</a> 
+            <a class="dropdown-item" asp-action="Update" asp-controller="Customer" asp-route-id= '@User.FindFirst(ClaimTypes.NameIdentifier)?.Value'>update profile</a> 
+
+
+
+        </div>
+        <div class="row col-md-10 pt-3">
+            <div class="col-md-12 text-center">
+                <h3>@ViewData["Title"]</h3>
+            </div>
+            <div class="col-md-12">
+                
+            </div>
+        </div>
+    </div>
+</div>

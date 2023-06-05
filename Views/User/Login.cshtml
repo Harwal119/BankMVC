@@ -1,0 +1,38 @@
+@model BankingMVC.Models.Dtos.LoginUserRequestModel
+<link rel="stylesheet" href="~/css/Log.css">
+<body style="background-color: springgreen;">
+    @* <style>
+        body{
+            background-color: cyan;
+        }
+    </style> *@
+    <div class="log">
+    <p><b><i>Use this Form To Login</i></b></p>
+    <div>@TempData["message"]</div>
+    <form asp-action="Login">
+        <div class="form-control">
+            <div class="log">
+                <label asp-for="Email"></label>
+                <input type="email" asp-for="Email" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+             <div class="log">
+                <label asp-for="Pin"></label>
+                <input type="password" asp-for="Pin"/>
+                <span asp-validation-for="Pin" class="text-danger"></span>
+            </div>
+            <div>
+                <input class="btn btn-primary" type="submit" value="Submit"/>
+            </div>
+        </div>
+    </form>
+    <li>
+        <a asp-controller="Home"  text asp-action="">Back</a>
+     </li>
+</div>
+</body>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

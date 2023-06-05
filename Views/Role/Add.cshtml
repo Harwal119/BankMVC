@@ -1,0 +1,41 @@
+@model BankingMVC.Models.Dtos.CreateRoleRequestModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Create Role";
+}
+<div class="">
+    <div class="row">
+        <div class="col-md-2 border" style="min-height: 520px; padding: 0px; margin: 0px">
+            @* @await Html.PartialAsync("~/Views/User/Menu.cshtml") *@
+            
+            <a class="dropdown-item active" asp-action="Super" asp-controller="User">Dashboard</a>
+            <a class="dropdown-item" asp-action="Add" asp-controller="Role">Create Roles</a>
+             <a class="dropdown-item" asp-action="List" asp-controller="Role">Role List</a> 
+               <a class="dropdown-item" asp-action="Add" asp-controller="Manager">Cretae Manager</a>
+            <a class="dropdown-item" asp-action="List" asp-controller="Manager">Manager List</a> 
+        </div>
+        <div class="row col-md-10 pt-3">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <span class="text-center"><h3>@ViewData["Title"]</h3></span>
+                <div>@TempData["message"]</div>
+                <form asp-action="Add">
+                    <div>
+                        <label asp-for="Name"></label>
+                        <input asp-for="Name" class="form-control" type="text" />
+                        <span asp-validation-for="Name"></span>
+                    </div>
+                    <div>
+                        <label asp-for="Description"></label>
+                        <input asp-for="Description" class="form-control" type="text" />
+                        <span asp-validation-for="Description"></span>
+                    </div>
+                    <div class="mt-2 text-end">
+                        <button type="submit" class="btn btn-primary" style="width: 30%">Create Role</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+</div>

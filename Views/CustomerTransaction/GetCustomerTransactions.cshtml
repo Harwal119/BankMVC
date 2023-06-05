@@ -1,0 +1,39 @@
+@model IEnumerable<BankingMVC.Models.Dtos.CustomerTransactionDto>
+    @{
+        ViewData["Title"] = "Customer TransactionHistory";
+    }
+
+    <table>
+        <thead>
+            <tr>
+                <th>Sender Name</th>
+                <th>Sender Acctount Number</th>
+                <th>Amount</th>
+                <th>Date</th>
+                <th>Reciever Name</th>
+                <th>Reciever Acctount Number</th>
+            </tr>
+        </thead>
+        <tbody>
+               @foreach (var item in Model)
+               {
+                <tr>
+                    @item.Customer.User.
+                </tr>
+               }
+        </tbody>
+    </table>
+
+     <li>
+        <a asp-controller="User"  text asp-action="Customer">Back</a>
+    </li>
+<style>
+    tr {
+        color: cadetblue;
+        text-transform: lowercase;
+    }
+
+    td. {
+        color: cornflowerblue;
+    }
+</style>

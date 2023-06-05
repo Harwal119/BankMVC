@@ -1,0 +1,25 @@
+@model BankingMVC.Models.Entities.Wallet
+<h2>Debit Wallet</h2>
+<p>Current AccountBalance = @Model.AccountBalance</p>
+@* <p>AccountNumber= @Model.AccountNumber</p> *@
+
+@using (Html.BeginForm("DebitWallet","Wallet"))
+{
+    <div class="form-group">
+        @Html.LabelFor(model => model.Amount, htmlAttributes: new { @class = "control-label" })
+        @Html.TextBoxFor(model => model.Amount, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.Amount, "", new { @class = "text-danger" })
+    </div>
+    
+    <div class="form-group">
+        <label for="acctNum">AccountNumber</label><br>
+        <input type="number" name="AccountNumber" placeholder="Enter acctount number" width="54px">
+    </div>
+    
+    <div class="form-group">
+        <input type="submit" value="Debit wallet" class="btn btn-primary" />
+    </div>
+    <li>
+        <a asp-controller="User"  text asp-action="Customer">Back</a>
+        </li>
+}

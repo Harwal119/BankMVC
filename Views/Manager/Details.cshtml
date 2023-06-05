@@ -1,0 +1,15 @@
+@model BankingMVC.Models.Dtos.ManagerDto
+@{
+ 
+}
+<h2>
+    @ViewData["ManagerName"]
+</h2>
+
+<div>
+    <h4>Full Name : @Model.FirstName @Model.MiddleName @Model.LastName</h4>
+    <h4>Email : @Model.Email</h4>
+    <h4>Phone Number:@Model.PhoneNumber </h4>
+    <h4>Phone Address:@Model.Address </h4>
+    
+</div>

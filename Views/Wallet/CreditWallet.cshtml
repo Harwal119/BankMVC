@@ -1,0 +1,22 @@
+@model BankingMVC.Models.Entities.Wallet
+<h2><i>Credit Wallet</i></h2>
+<p>Current AccountBalance = @Model.AccountBalance</p>
+
+@using (Html.BeginForm("CreditWallet","Wallet"))
+{
+    <div class="form-group">
+        @Html.LabelFor(model => model.Amount, htmlAttributes: new { @class = "control-label" })
+        @Html.TextBoxFor(model => model.Amount, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.Amount, "", new { @class = "text-danger" })
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Credit wallet"  class="btn btn-primary" />
+    </div>
+    <li>
+        <a asp-controller="User"  text asp-action="Customer">Back</a>
+        </li>
+    
+}
+<script>
+    alert("Wallet Successful Fund")
+</script>

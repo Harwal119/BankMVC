@@ -1,0 +1,10 @@
+.log{
+    /* display: flex; */
+    /* flex-direction: column; */
+    display: contents;
+    width: 70px;
+    /* border-radius: px;
+    padding: 0px;  */
+    background-color: rgba(44, 54, 53, 0.208);
+    box-sizing: border-box;
+}

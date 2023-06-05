@@ -1,0 +1,22 @@
+@model BankingMVC.Models.Entities.Wallet
+@{
+    @* ViewData["ManagerName"] = @Model.Name; *@
+}
+<h2>
+    @* @ViewData["ManagerName"] *@
+</h2>
+
+<div>
+    @* <h4>Id : @Model.Id</h4><br><br> *@
+    <h4>AccountBalance : @Model.AccountBalance</h4><br><br>
+    <h4>AccountNumber :@Model.AccountNumber</h4><br><br>
+    @* <td><a asp-action="Get" asp-controller="Wallet" asp-route-id="@Model.Id">View Balance</a></td> *@
+    <li>
+        <b><a asp-controller="User" text asp-action="Customer">Back</a><br></b>
+    </li>
+</div>
+<style>
+    div{
+        color: cornflowerblue;
+    }
+</style>
