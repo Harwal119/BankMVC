@@ -119,7 +119,7 @@ namespace BankingMVC.Service.Implementation
 
         public BaseResponse<List<CustomerTransactionDto>> GetCustomerTransactions(string id)
         {
-            var customer = _customerRepository.Get(id);
+            var customer = _customerRepository.Get(x => x.UserId == id);
             if (customer == null)
             {
                 return new BaseResponse<List<CustomerTransactionDto>>

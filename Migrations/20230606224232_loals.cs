@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace BankingMVC.Migrations
 {
-    public partial class faz : Migration
+    public partial class loals : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -205,7 +205,8 @@ namespace BankingMVC.Migrations
             migrationBuilder.CreateIndex(
                 name: "IX_Wallets_UserId",
                 table: "Wallets",
-                column: "UserId");
+                column: "UserId",
+                unique: true);
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

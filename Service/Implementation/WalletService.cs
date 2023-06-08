@@ -12,13 +12,18 @@ namespace BankingMVC.Service.Implementation
     public class WalletService : IWalletService
     {
         public readonly IWalletRepository _walletRepository;
+        public readonly ICustomerRepository _customerRepository;
+        private readonly ICustomerTransactionRepository _customerTransactionRepository;
 
-        public WalletService(IWalletRepository walletRepository)
+        public WalletService(IWalletRepository walletRepository, ICustomerRepository customerRepository, ICustomerTransactionRepository customerTransactionRepository)
         {
             _walletRepository = walletRepository;
+            _customerTransactionRepository = customerTransactionRepository;
+            _customerRepository = customerRepository;
         }
         public BaseResponse<Wallet> CreditWallet(string userId, double amount)
         {
+            var customer = _customerRepository.Get(x => x.UserId == userId);
             if (amount < 0)
             {
                 return new BaseResponse<Wallet>
@@ -27,9 +32,19 @@ namespace BankingMVC.Service.Implementation
                     Status = false,
                 };
             }
+                var custTransactiuon = new CustomerTransaction()
+                {
+                    Amount = amount,
+                    RecieverAcctNumber = customer.User.wallet.AccountNumber,
+                    Customer = customer,
+                    CustomerId = customer.Id,
+                    TransactionType  = Models.Enums.TransactionType.Credit,
+                    Status = Models.Enums.Status.Succesful
+                };
 
             var wallet = _walletRepository.GetbyUserId(userId);
             wallet.AccountBalance += amount;
+            _customerTransactionRepository.Create(custTransactiuon);
             _walletRepository.Update(wallet);
             _walletRepository.Save();
             return new BaseResponse<Wallet>

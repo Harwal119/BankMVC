@@ -100,18 +100,20 @@ namespace BankingMVC.Service.Implementation
             
                 var role = _roleRepository.Get(r => r.Name == "Customer");
 
-                User user = new User();
-                user.FirstName = model.FirstName;
-                user.MiddleName = model.MiddleName;
-                user.LastName = model.LastName;
-                user.Email= model.Email;
-                user.Gender = (Gender)model.Gender;
-                user.Address = model.Address;
-                user.PhoneNumber = model.PhoneNumber;
-                user.CreatedBy = "Manager";
-                user.RoleId = role.Id;
-                user.Pin = model.Pin;
-                _userRepository.Create(user);
+                User user = new User
+                {
+                 FirstName = model.FirstName,
+                MiddleName = model.MiddleName,
+                LastName = model.LastName,
+                Email= model.Email,
+                Gender = (Gender)model.Gender,
+                Address = model.Address,
+                PhoneNumber = model.PhoneNumber,
+                CreatedBy = "Manager",
+                RoleId = role.Id,
+                Pin = model.Pin,
+                };
+               _userRepository.Create(user);
                 _userRepository.Save();
 
                 

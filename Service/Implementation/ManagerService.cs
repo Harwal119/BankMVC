@@ -24,6 +24,15 @@ namespace BankingMVC.Service.Implementation
         }
         public BaseResponse<ManagerDto> Create(CreateManagerRequestModel model)
         {
+            var managers= _managerRepository.GetAll().ToList();
+            if (managers.Count != 0)
+            {
+                return new BaseResponse<ManagerDto>
+                {
+                    Message = "Manager already Exist",
+                    Status = false,
+                };
+            }
             var managerExist = _userRepository.Get(a =>a.Email == model.Email);
             if (managerExist != null)
             {

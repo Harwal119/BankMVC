@@ -213,7 +213,8 @@ namespace BankingMVC.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex("UserId")
+                        .IsUnique();
 
                     b.ToTable("Wallets");
                 });
@@ -257,8 +258,8 @@ namespace BankingMVC.Migrations
             modelBuilder.Entity("BankingMVC.Models.Entities.Wallet", b =>
                 {
                     b.HasOne("BankingMVC.Models.Entities.User", "user")
-                        .WithMany()
-                        .HasForeignKey("UserId");
+                        .WithOne("wallet")
+                        .HasForeignKey("BankingMVC.Models.Entities.Wallet", "UserId");
 
                     b.Navigation("user");
                 });
@@ -266,6 +267,11 @@ namespace BankingMVC.Migrations
             modelBuilder.Entity("BankingMVC.Models.Entities.Role", b =>
                 {
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("BankingMVC.Models.Entities.User", b =>
+                {
+                    b.Navigation("wallet");
                 });
 #pragma warning restore 612, 618
         }

@@ -25,6 +25,7 @@ builder.Services.AddScoped<IManagerRepository, ManagerRepository>();
 builder.Services.AddScoped<IManagerService, ManagerService>();
 builder.Services.AddScoped<IWalletRepository, WalletRepository>();
 builder.Services.AddScoped<IWalletService, WalletService>();
+builder.Services.AddHttpContextAccessor();
 // builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
 // builder.Services.AddScoped<ICustomerService, CustomerService>();
 

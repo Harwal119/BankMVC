@@ -30,6 +30,7 @@ namespace BankingMVC.Repository.Implementation
             return _context.Customers
             .Where(a => a.IsDeleted == false)
             .Include(a => a.User)
+            .ThenInclude(x => x.wallet)
             .SingleOrDefault(expression);
         }
 

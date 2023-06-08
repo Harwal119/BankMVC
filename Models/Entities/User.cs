@@ -18,6 +18,7 @@ namespace BankingMVC.Models.Entities
         public string Pin{ get;set; }
         public string RoleId{ get;set; }
         public Role Role{ get;set; }
+        public Wallet wallet{get;set;}
         
         // public FormFile ProfilePhoto{ get;set; }
     }

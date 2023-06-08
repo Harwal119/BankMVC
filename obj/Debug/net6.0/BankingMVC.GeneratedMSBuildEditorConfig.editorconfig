@@ -8,133 +8,133 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BankingMVC
 build_property.RootNamespace = BankingMVC
-build_property.ProjectDir = C:\Users\awwal\OneDrive\Desktop\BankingMVC\
+build_property.ProjectDir = c:\Users\awwal\OneDrive\Desktop\BankingMVC\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\awwal\OneDrive\Desktop\BankingMVC
+build_property.MSBuildProjectDirectory = c:\Users\awwal\OneDrive\Desktop\BankingMVC
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/CustomerTransaction/GetCustomerTransactions.cshtml]
+[c:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/CustomerTransaction/GetCustomerTransactions.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJUcmFuc2FjdGlvblxHZXRDdXN0b21lclRyYW5zYWN0aW9ucy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/Customer/Delete.cshtml]
+[c:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/Customer/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/Customer/Get.cshtml]
+[c:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/Customer/Get.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcR2V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/Customer/GetAll.cshtml]
+[c:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/Customer/GetAll.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcR2V0QWxsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/Customer/Register.cshtml]
+[c:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/Customer/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcUmVnaXN0ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/Customer/Update.cshtml]
+[c:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/Customer/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/Home/Index.cshtml]
+[c:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/Home/Privacy.cshtml]
+[c:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/Manager/Add.cshtml]
+[c:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/Manager/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlclxBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/Manager/Delete.cshtml]
+[c:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/Manager/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlclxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/Manager/Details.cshtml]
+[c:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/Manager/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlclxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/Manager/List.cshtml]
+[c:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/Manager/List.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlclxMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/Manager/Update.cshtml]
+[c:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/Manager/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlclxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/Role/Add.cshtml]
+[c:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/Role/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/Role/Delete.cshtml]
+[c:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/Role/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/Role/Details.cshtml]
+[c:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/Role/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/Role/List.cshtml]
+[c:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/Role/List.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/Role/Update.cshtml]
+[c:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/Role/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/Shared/Error.cshtml]
+[c:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+[c:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/User/Customer.cshtml]
+[c:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/User/Customer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxDdXN0b21lci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/User/Login.cshtml]
+[c:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/User/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/User/Manager.cshtml]
+[c:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/User/Manager.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxNYW5hZ2VyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/User/Menu.cshtml]
+[c:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/User/Menu.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxNZW51LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/User/Super.cshtml]
+[c:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/User/Super.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxTdXBlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/Wallet/CreditWallet.cshtml]
+[c:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/Wallet/CreditWallet.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FsbGV0XENyZWRpdFdhbGxldC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/Wallet/DebitWallet.cshtml]
+[c:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/Wallet/DebitWallet.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FsbGV0XERlYml0V2FsbGV0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/Wallet/Get.cshtml]
+[c:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/Wallet/Get.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FsbGV0XEdldC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/_ViewImports.cshtml]
+[c:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/_ViewStart.cshtml]
+[c:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/Shared/_Layout.cshtml]
+[c:/Users/awwal/OneDrive/Desktop/BankingMVC/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-jj44uoghjv

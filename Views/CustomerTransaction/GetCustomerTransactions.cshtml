@@ -1,10 +1,10 @@
-@model IEnumerable<BankingMVC.Models.Dtos.CustomerTransactionDto>
+@model List<BankingMVC.Models.Dtos.CustomerTransactionDto>
     @{
         ViewData["Title"] = "Customer TransactionHistory";
     }
 
     <table>
-        <thead>
+        @* <thead>
             <tr>
                 <th>Sender Name</th>
                 <th>Sender Acctount Number</th>
@@ -13,14 +13,17 @@
                 <th>Reciever Name</th>
                 <th>Reciever Acctount Number</th>
             </tr>
-        </thead>
+        </thead> *@
         <tbody>
                @foreach (var item in Model)
                {
                 <tr>
-                    <td>@item.Customer.User.FirstName</td>
-                    <td>@item.Customer.User.MiddleName</td>
-                    <td>@item.Customer.User.LastName</td>
+                    <td>@item.Amount</td>
+                    <td>@item.Date </td>
+                    <td>@item.Status </td>
+                     <td>@item.TransactionType </td>
+                    @* <td>@item.Customer.User.wallet.AccountNumber</td>
+                    <td>@item.Customer.User.wallet.DateCreated</td> *@
                 </tr>
                }
         </tbody>
