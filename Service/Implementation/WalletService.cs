@@ -56,7 +56,7 @@ namespace BankingMVC.Service.Implementation
 
         public BaseResponse<Wallet> DebitWallet(string userId, double amount, string accountNumber)
         {
-            var wallet = _walletRepository.GetbyUserId(userId);
+            var wallet = _walletRepository.Get(x =>x.UserId == userId);
             if (wallet.AccountBalance < amount)
             {
                 return new BaseResponse<Wallet>

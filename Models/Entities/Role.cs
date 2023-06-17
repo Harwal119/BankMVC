@@ -11,6 +11,5 @@ namespace BankingMVC.Models.Entities
         public string Description{ get; set; }
         public string UserId{ get;set; }
         public ICollection<User> User { get;set; } = new HashSet<User>();
-        // public List<UserRole> UserRoles{ get;set; }
     }
 }

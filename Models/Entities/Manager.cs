@@ -10,7 +10,7 @@ namespace BankingMVC.Models.Entities
         public string UserId{ get;set; }
         public User User{ get;set; }
 
-        public string ManagerRegNo{ get;set; } //= GenerateStaffRegNumber();
+        public string ManagerRegNo{ get;set; }
 
        
     }

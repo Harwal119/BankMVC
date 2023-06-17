@@ -32,6 +32,7 @@ namespace BankingMVC.Service.Implementation
                     Message = "Manager already Exist",
                     Status = false,
                 };
+                
             }
             var managerExist = _userRepository.Get(a =>a.Email == model.Email);
             if (managerExist != null)

@@ -73,6 +73,7 @@ namespace BankingMVC.Controllers
         [HttpPost]
         public IActionResult DebitWallet(string id, double amount, string accountNumber)
         {
+            var userId = _httpContextAccessor.HttpContext.User.FindFirstValue(ClaimTypes.NameIdentifier);
             if (amount <= 0)
             {
                 ModelState.AddModelError("Amount", "amount must be less than Zero");
